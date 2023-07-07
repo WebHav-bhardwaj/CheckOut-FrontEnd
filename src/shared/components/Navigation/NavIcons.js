@@ -51,7 +51,7 @@ export default function NavIcons() {
       {dropdown && <Backdrop onClick={closeDropdown} />}
       <ul className="text-3xl flex justify-end">
         <li className="my-custom-text-hover pr-2 lg:pr-6">
-          <NavLink to="/">
+          <NavLink to="/user/auth">
             <AccountBoxIcon fontSize="inherit" />
           </NavLink>
         </li>

@@ -1,15 +1,16 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Route,
   Redirect,
+  Route,
+  BrowserRouter as Router,
   Switch,
 } from "react-router-dom";
 
+import NewProduct from "./Products/pages/NewProduct";
+import Auth from "./Users/Pages/Auth";
+import UserCart from "./Users/Pages/UserCart";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import HomePage from "./shared/pages/HomePage";
-import NewProduct from "./Products/pages/NewProduct";
-import UserCart from "./Users/Pages/UserCart";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route path="/user/cart">
             <UserCart />
+          </Route>
+          <Route path="/user/auth">
+            
           </Route>
           <Redirect to="/"></Redirect>
         </Switch>
