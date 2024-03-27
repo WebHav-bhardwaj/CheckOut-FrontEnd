@@ -9,7 +9,6 @@ export default function BasicSelect(props) {
 
   const handleChange = (event) => {
     setCategory(event.target.value);
-    props.selectedValue(event.target.value);
   };
   
   return (
